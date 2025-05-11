@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# 🌍 React Language Translator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and interactive language translator built with **React**, allowing users to translate text between multiple languages using the **MyMemory Translation API**.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- Translate text from one language to another
+- Default languages: **English (From)** → **Hindi (To)**
+- Dropdown selection for source and target languages
+- Translate button to trigger translation
+- **Refresh button** to clear input and output fields
+- Responsive and user-friendly UI
 
-### `npm start`
+## 🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React (with functional components and hooks)
+- **API:** MyMemory Translation API
+- **Environment Variables:** dotenv (.env)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🔐 Environment Setup
 
-### `npm test`
+To run the app, you need to configure an environment variable:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. A `.env.example` file is provided.
+2. Create a `.env` file in the root directory.
+3. Add your email used for the MyMemory API in this format:
+REACT_APP_EMAIL=your_email@example.com
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 1. Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/PriyankDonda/translator.git
+cd translator
+```
 
-### `npm run eject`
+### 2. Set Up Environment Variables
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+cp .env.example .env
+# Then open .env and add your email
+```
+### 3. Install Dependencies
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Run the App
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+npm start
+```
 
-## Learn More
+Visit http://localhost:3000 to use the app in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ✅ How to Use
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Enter text in the input area.
 
-### Code Splitting
+Select languages for translation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Click Translate Text to view translated text.
 
-### Analyzing the Bundle Size
+Use the Refresh icon at the top right to clear the text and start fresh.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📬 Contact
+If you found this project helpful, give it a ⭐ on GitHub!
+Have issues or suggestions? Feel free to open an issue.

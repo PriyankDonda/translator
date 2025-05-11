@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+:root{
+  --bgcolor: #FFFFFF;
+  /* --background: #282c34; */
+  --color1: #003566;  /* #168FFF */
+  --color2: #004F99;  /* #45a5ff */
+  --color3: #1272CC;  /* #73bcff */
+  --color4: #0084FF;  /* #a2d2ff */
+  --text: white;
+  --reactblue: #61dafb;
+  --border: rgba(196, 194, 194, 0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: var(--color1);
+}
+button:hover{
+  cursor: pointer;
+}
+button:focus{
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.center{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+}
+
+.box{
+  width: 1000px;
+  /* height: 570px; */
+  padding: 30px;
+  /* padding-bottom: 50px; */
+  
+  border-radius: 5px;
+  background: var(--color2);
+  color: var(--text);
+}
+
+.textareaBox{
+  display: flex;
+  border-radius: 5px;
+}
+
+.textarea{
+  height: 300px;
+  width: 500px;
+  /* border-radius: 5px; */
+  padding: 13px;
+  background: var(--bgcolor);
+  border: none;
+  font-size: 135%;
+  border: 1px solid var(--border);
+}
+.textarea:focus{
+  outline: none;
+}
+
+.languageOption{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: var(--bgcolor);
+  color: black;
+  padding: 10px 0px;
+}
+
+.languateSelect{
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 120px;
+}
+
+.translateBtn{
+  margin-top: 30px;
+}
+.translateBtn button{
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  background: var(--color4);
+  color: var(--text);
+  font-size: 120%;
+}
+
+.refersh-icon{
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 120%;
+  cursor: pointer;
 }
